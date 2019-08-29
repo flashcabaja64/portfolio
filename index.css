@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html, body, nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/*Navigation Menu/Bar Styling*/
+
+nav.main-nav {
+    display: block;
+    text-align: right;
+    background-color:gray;
+}
+
+ul.nav-links {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    width:auto;
+    margin: 0px 10px;
+}
+
+/*Header*/
+.parallax {
+    background: url('images/header-pic.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 250px;
+}
+h1, p.header-text {
+    color: white;
+}
+
+/*Main Section (About Me, Projects, Contacts)*/
+.project img {
+    height: auto;
+    width: 33%;
+}
+
+/*Footer*/
+footer {
+    font-weight: bold;
+}
+/*Desktop Responsive Size*/
+@media only screen and (min-width: 768px) {
+
+}
+
+/*Tablet Responsive Size*/
+@media only screen and (min-width: 600px) {
+
+}
