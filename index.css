@@ -179,7 +179,6 @@ section.projects {
 
 section .project-1 {
     text-align: center;
-    border: 1px solid black;
 }
 
 .section-body h2 {
@@ -187,8 +186,12 @@ section .project-1 {
     text-transform: uppercase;
 }
 
+.project-1 h3 {
+    font-size: 1.5rem;
+}
+
 section.projects img {
-    width: 100%;
+    width: 75%;
     height: auto;
     margin: 0 auto;
 }
