@@ -6,21 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hubert Yang Web Developer Portfolio</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/MyProject/Content/fontawesome-free-5.10.1-web/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <header role="banner">
-        <div class="header-container">
+        <div class="header-container" id="home">
             <nav class="main-nav" role="navigation">
                 <div class="menu-icon open">
                     <i class="fa fa-bars"></i>
                 </div>
                 <ul class="nav-list">
-                    <div class="menu-icon close">
-                        <i class="fa fa-times"></i>
-                    </div>
+                    <i class="fa fa-times menu-icon close"></i>
                     <li class="nav-items"><a href="#home" class="nav-links current">Home</a></li>
                     <li class="nav-items"><a href="#about-me" class="nav-links">About Me</a></li>
                     <li class="nav-items"><a href="#skills" class="nav-links">Skills</a></li>
@@ -30,12 +29,12 @@
             </nav>
         </div>
     </header>
-    <section class="portfolio-intro">
-        <div class="header-name" id="home">
-            <h1>Hello, I'm <span>Hubert Yang</span></h1>
-            <p class="header-text">I'm a full-stack web developer</p>
-        </div>
     <main class="top-container" role="main">
+    <section class="portfolio-intro">
+        <div class="header-name" >
+            <h1>Hello, I'm <span>Hubert Yang</span></h1>
+            <p class="header-text">I'm a Full-Stack Web Developer</p>
+        </div>
         <div class="portfolio-body">
             <section class="section-body about-me" id="about-me">
                 <div class="body-container">
@@ -43,18 +42,19 @@
                     <p class="about-me-body">I am a Web-Developer and recent graduate of Thinkful bootcamp Engineering Immersion course. Understanding the inner workings of how technology has always been an interest of mine. Solving logic puzzles from a simple function to ultimately constructing a fully-functional application gets my mind bursting with ideas. Most of all, the code is your canvas and you are the artist to express them to the world.<br><br>
                     Outside of all the problem-solving, I like to explore the hiking trails of Los Angeles, reading a good psychology book, or merely scrunched up watching the latest releases on Netflix.
                     </p>
-            </div>
+                </div>
             </section>
             <section class="section-body skills" id="skills">
                 <div class="skills-container">
                     <h2>Skills</h2>
-                    <div class="skill-set">
-                        <p>JavaScript</p>
-                        <p>HTML 5</p>
-                        <p>CSS 3</p>
-                        <p>Git</p>
-                    </div>
-                </div>
+                    <ul class="skill-set">
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>HTML 5</li>
+                        <li>CSS 3</li>
+                        <li>Git</li>
+                    </ul>
+                </div>    
             </section>
             <section class="section-body projects" id="projects">
                 <h2 class="">Projects</h2>
@@ -62,27 +62,33 @@
                     <h3>TV Quotes Quiz App</h3>
                     <div class="img-container">
                         <img src="./images/quiz_app.PNG" alt="Picture of TV Show Quiz App">
-                        <div class="hover-effect">
-                            <a href="https://thinkful-ei-gecko.github.io/Marlon-Hubert-QuizApp/" class="repo-link">Live</a>
-                            <a href="https://github.com/thinkful-ei-gecko/Marlon-Hubert-QuizApp" class="hub-link">GitHub</a>
+                        <div class="project-links">
+                            <a href="https://thinkful-ei-gecko.github.io/Marlon-Hubert-QuizApp/" class="repo-link" target="_blank">Live</a>
+                            <a href="https://github.com/thinkful-ei-gecko/Marlon-Hubert-QuizApp" class="hub-link" target="_blank">GitHub</a>
                         </div>
                     </div>
                     <p>This particular TV Show quiz application tests a curious user’s knowledge of popular tv show quotes said by memorable characters. The user navigates through a total of 10 questions, which each question providing feedback of the answer they chose. Lastly, it renders a total score of how knowledgeable they are, and if they are unsatisfied, they can always retake with a mere click of the 'Try Again' button.
                     </p>
+                    <p class="tech-title">Technologies Used</p>
+                    <ul class="tech-list">
+                        <li>JavaScript</li>
+                        <li>HTML 5</li>
+                        <li>CSS 3</li>
+                    </ul>
                 </div>
             </section>
             <section class="section-body contact" id="contact">
                 <h2>Contact</h2>
                 <div class="contact-links">
-                    <a href="https://www.linkedin.com/in/hubert-yang-b1181693/"><i class="fa fa-linkedin fa-2x"></i></a>
-                    <a href="https://github.com/flashcabaja64"><i class="fa fa-github fa-2x"></i></a>
-                    <a href="mailto:offspring7890@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/hubert-yang-b1181693/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                    <a href="https://github.com/flashcabaja64" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                    <a href="mailto:offspring7890@gmail.com" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a>
                 </div>        
             </section>
         </div>
-    </main>
     </section>
-        <footer class="footer-info" role="content-info">
+    </main>
+        <footer class="footer-info" role="contentinfo">
             <p class="footer-copyright">&copy; 2019 Hubert Yang</p>
         </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

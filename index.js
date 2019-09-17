@@ -7,4 +7,7 @@ $(document).ready(function() {
     $('.close').on('click', () => {
         $('.nav-list').removeClass('active')
     })
+    $('.nav-items').on('click', () => {
+        $('.nav-list').removeClass('active')
+    })
 });
