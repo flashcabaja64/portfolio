@@ -295,7 +295,7 @@ p.footer-copyright {
     }
     
     nav {
-        width: 80%;
+        width: 100%;
         right: 5%;
         justify-content: space-around;
         position: fixed;
@@ -308,7 +308,6 @@ p.footer-copyright {
         width: 100%;
         height: initial;
         position: sticky;
-
         right: initial;
         flex-direction: row;
         transition: initial;
