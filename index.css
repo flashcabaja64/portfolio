@@ -115,6 +115,11 @@ h1, p.header-text {
     padding: 0 2rem;
 }
 
+.header-name>img {
+    border-radius: 50%;
+    width: 33%;
+}
+
 .header-name span {
     font-weight: 700;
 }
@@ -172,25 +177,33 @@ section.contact {
 
 /*Skills*/
 div.skills-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
-section.skills h2 {
+section#skills {
+    display: block;
     text-align: center;
+}
+
+div.tech-stack {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.tech-stack>p {
+    font-size: 1.6rem;
+    text-decoration: underline;
 }
 
 section .skill-set {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     margin: 0 1rem;
     justify-content: center;
     line-height: 2.5rem;
-    font-size: 1.5rem;
-}
-
-section .skill-set li {
-    padding: 0 1.5rem;
+    font-size: 1.2rem;
 }
 
 /*Project Section*/
@@ -199,23 +212,35 @@ section.projects {
     text-align: center;
 }
 
-section .project-1 {
+section .project-view {
     text-align: center;
 }
 
 .section-body h2 {
     font-size: 3rem;
+    font-family: 'Dosis', sans-serif;
     text-transform: uppercase;
+    letter-spacing: .5rem;
+    text-decoration: underline;
+    text-decoration-style: dotted;
 }
 
-.project-1 h3 {
-    font-size: 1.5rem;
+.project-view {
+    margin-bottom: 1.5rem; 
+    border-bottom: 2px solid black;
+    padding: 1% 0px;
+}
+
+.project-view h3 {
+    font-size: 2rem;
+    line-height: 2rem;
 }
 
 section.projects img {
     width: 75%;
     height: auto;
     margin: 0 auto;
+    border-radius: 3%;
 }
 
 section.projects .project-links {
@@ -232,16 +257,21 @@ section .img-container{
     font-size: 1.2rem;
     font-weight: 900;
 }
+div.tech-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 section.projects .tech-list {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
+
 }
 
 .tech-list > li {
     list-style-type: none;
     font-size: 20px;
+    padding: 0 0.5rem;
+    line-height: 1.5rem;
 }
 
 #contact h2 {
@@ -257,6 +287,11 @@ section.projects .tech-list {
 #contact {
     display: flex;
     flex-direction: column;
+}
+
+div.contact-links {
+    display: flex;
+    justify-content: center;
 }
 
 .contact-links a{
@@ -280,7 +315,7 @@ footer.footer-info {
 p.footer-copyright {
     flex: 1;
     font-weight: bold;
-    padding: 5px 0;
+    padding: 5% 0;
 }
 
 /*Desktop Responsive Size*/
@@ -339,6 +374,15 @@ p.footer-copyright {
         display: block;
     }
 
+    .section-body h2 {
+        font-size: 3.8rem;
+        font-family: 'Dosis', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+    }
+
     /*About Me*/
     section.about-me {
         height: auto;
@@ -356,5 +400,28 @@ p.footer-copyright {
     /*Projects*/
     section.contact {
         height: 4rem;
+    }
+
+    /*Skills*/
+    div.skills-container {
+        flex-direction: row;
+    }
+
+    div.tech-stack {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    div.tech-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    div.tech-container .tech-list {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        text-align: center;
     }
 }

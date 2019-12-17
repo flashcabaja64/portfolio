@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hubert Yang Web Developer Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Hubert Yang's Web Developer Portfolio</title>
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel='shortcut icon' type='image/x-icon' href='./images/favicon.ico'/>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="index.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="/MyProject/Content/fontawesome-free-5.10.1-web/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:600|Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -32,6 +38,7 @@
     <main class="top-container" role="main">
     <section class="portfolio-intro">
         <div class="header-name" >
+            <img src="./images/profile-pic.jpg" alt="head-shot photo of Hubert Yang">
             <h1>Hello, I'm <span>Hubert Yang</span></h1>
             <p class="header-text">I'm a Full-Stack Web Developer</p>
         </div>
@@ -45,44 +52,114 @@
                 </div>
             </section>
             <section class="section-body skills" id="skills">
+                <h2>Skills</h2>
                 <div class="skills-container">
-                    <h2>Skills</h2>
-                    <ul class="skill-set">
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                        <li>HTML 5</li>
-                        <li>CSS 3</li>
-                        <li>Git</li>
-                    </ul>
+                    <div class="tech-stack">
+                        <p>Front-End</p>
+                        <ul class="skill-set">
+                            <li>Git</li>
+                            <li>jQuery</li>
+                            <li>React.js</li>
+                            <li>HTML 5</li>
+                            <li>CSS 3</li>
+                            <li>JavaScript (ES6)</li>
+                            <li>Enzyme</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <p>Back-End</p>
+                        <ul class="skill-set">
+                            <li>Express.js</li>
+                            <li>Node.js</li>
+                            <li>PostgreSQL</li>
+                            <li>Mocha/Chai</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section class="section-body projects" id="projects">
                 <h2 class="">Projects</h2>
-                <div class="project-1">
-                    <h3>TV Quotes Quiz App</h3>
+                <div class="project-view">
+                    <h3>Mood Journal</h3>
                     <div class="img-container">
-                        <img src="./images/quiz_app.PNG" alt="Picture of TV Show Quiz App">
+                        <img src="./images/capstone-1.PNG" alt="dashboard image of mood journal project">
                         <div class="project-links">
-                            <a href="https://thinkful-ei-gecko.github.io/Marlon-Hubert-QuizApp/" class="repo-link" target="_blank">Live</a>
-                            <a href="https://github.com/thinkful-ei-gecko/Marlon-Hubert-QuizApp" class="hub-link" target="_blank">GitHub</a>
+                            <a href="https://journal-app.hubertyang.now.sh/" class="repo-link" target="_blank">Live</a>
+                            <a href="https://github.com/flashcabaja64/mood-journal-client" class="hub-link" target="_blank">GitHub</a>
                         </div>
                     </div>
-                    <p>This particular TV Show quiz application tests a curious user’s knowledge of popular tv show quotes said by memorable characters. The user navigates through a total of 10 questions, which each question providing feedback of the answer they chose. Lastly, it renders a total score of how knowledgeable they are, and if they are unsatisfied, they can always retake with a mere click of the 'Try Again' button.
+                    <p>This mood journal is a documentation of your moods and/or emotions. We can go through a wide-spectrum of different emotions, but without the self-awareness to look deeper into their thought process, we can sometimes feel out-of-touch with ourselves. One of the goals of this application is to help users discover hidden meanings to their psyche. Every entry will go through a data collection process and in turn reveal patterns to their moods and/or emotions.
                     </p>
-                    <p class="tech-title">Technologies Used</p>
-                    <ul class="tech-list">
-                        <li>JavaScript</li>
-                        <li>HTML 5</li>
-                        <li>CSS 3</li>
-                    </ul>
+                    <div class="tech-container">
+                        <p class="tech-title">Technologies Used</p>
+                        <ul class="tech-list">
+                            <li>React</li>
+                            <li>HTML 5</li>
+                            <li>CSS 3</li>
+                            <li>PostgreSQL</li>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>Mocha/Chai</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-view">
+                    <h3>Learn Spanish Med-Terms</h3>
+                    <div class="img-container">
+                        <img src="./images/capstone-2.PNG" alt="screenshot of learn spanish med-terms app">
+                        <div class="project-links">
+                            <a href="https://hubert-spanishmedterms.now.sh/" class="repo-link" target="_blank">Live</a>
+                            <a href="https://github.com/flashcabaja64/Spanish-Med-Terms-Capstone2-Client" class="hub-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                    <p>Get a simple start with learning Spanish Medical Terminology by way of spaced repetition. Users can first navigate to 'Study Mode' where they can study the spanish terms and english translations. Once they feel comfortable and want to prove their translation ability, they can switch over to 'Quiz Mode' and test their skills. Each word will keep track of correct, incorrect, and total score to ensure the terms are properly memorized.
+                    </p>
+                    <div class="tech-container">
+                        <p class="tech-title">Technologies Used</p>
+                        <ul class="tech-list">
+                            <li>React</li>
+                            <li>HTML 5</li>
+                            <li>CSS 3</li>
+                            <li>Cypress</li>
+                            <li>PostgreSQL</li>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>Mocha/Chai</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-view">
+                    <h3>Chore Runner</h3>
+                    <div class="img-container">
+                        <img src="./images/capstone-3.png" alt="screenshot of third capstone project, Chore-Runner">
+                        <div class="project-links">
+                            <a href="https://chorerunner-client.now.sh/" class="repo-link" target="_blank">Live</a>
+                            <a href="https://github.com/thinkful-ei-gecko/ChoreRunner-Client" class="hub-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                    <p>If keeping track and assigning chores to your precious children are difficult, turn it into a game by using Chore Runner. Each household, a parent can assign chores for their children that rewards points after a child logs into their own account to approve them. To add more spice to the game, children can compete with their fellow siblings to see who has collected the most points from their completed chores in the leaderboards page. What better way to teach your children discpline and responsibility than turning a tedious and boring task into a interesting one.
+                    </p>
+                    <div class="tech-container">
+                        <p class="tech-title">Technologies Used</p>
+                        <ul class="tech-list">
+                            <li>React</li>
+                            <li>HTML 5</li>
+                            <li>CSS 3</li>
+                            <li>PostgreSQL</li>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>Enzyme</li>
+                            <li>Mocha/Chai</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section class="section-body contact" id="contact">
                 <h2>Contact</h2>
                 <div class="contact-links">
-                    <a href="https://www.linkedin.com/in/hubert-yang-b1181693/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/hubert-yang88/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
                     <a href="https://github.com/flashcabaja64" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-                    <a href="mailto:offspring7890@gmail.com" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a>
+                    <a href="mailto:hubert.yang88@yahoo.com" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a>
                 </div>        
             </section>
         </div>
