@@ -263,10 +263,6 @@ div.tech-container {
     justify-content: center;
 }
 
-section.projects .tech-list {
-
-}
-
 .tech-list > li {
     list-style-type: none;
     font-size: 20px;
