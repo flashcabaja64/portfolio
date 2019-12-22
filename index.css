@@ -67,7 +67,7 @@ nav {
 
 .nav-list {
     width: 25rem;
-    height: 100vh;
+    height: 100%;
     background-color: #d7d4ed;
     position: fixed;
     top: 0;
@@ -85,10 +85,10 @@ nav {
 
 .nav-list.active {
     right: 0;
-    width: 100%
+    width: 100%;
 }
 
-i.close {
+li.close {
     color: #eb648c;
     font-size: 2.5rem;
     position: absolute;
@@ -97,7 +97,7 @@ i.close {
 }
 
 .nav-items {
-    margin: 1.5rem 0;
+    padding-bottom: 1.5vh;
 }
 .nav-links {
     font-size: 1.6rem;
